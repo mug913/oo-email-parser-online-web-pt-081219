@@ -13,7 +13,7 @@ class EmailAddressParser
       if address == " " 
         @email.delete_At(index)
       binding.pry  
-    end
+      end
     end 
   end
    
