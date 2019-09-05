@@ -10,7 +10,7 @@ class EmailAddressParser
   def initialize(email_string) 
     @emails = email_string.split(/[\s,']/)
     @emails.each_with_index do |address,index|
-      if address == "" or @emails.contain?(address)
+      if address == "" || @emails.contain?(address)
         @emails.delete_at(index)
       binding.pry  
       end
