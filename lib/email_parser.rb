@@ -12,7 +12,7 @@ class EmailAddressParser
     @emails.each_with_index do |address,index|
       if address == "" || @emails.include?(address)
         @emails.delete_at(index)
-      binding.pry  
+     # binding.pry  
       end
     end 
   end
