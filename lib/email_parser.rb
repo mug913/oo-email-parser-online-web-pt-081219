@@ -9,6 +9,7 @@ class EmailAddressParser
   
   def initialize(email_string) 
     @emails = email_string.split(/[\s,']/)
+    @emails
    end
    
    def parse 
