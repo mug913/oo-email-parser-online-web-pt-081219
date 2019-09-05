@@ -9,6 +9,9 @@ class EmailAddressParser
   
   def initialize(email_string) 
     @emails = email_string.split(/[\s,']/)
+    @emails.each do |index|
+      binding.pry 
+    end 
   end
    
    def parse 
