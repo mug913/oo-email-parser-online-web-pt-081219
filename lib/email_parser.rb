@@ -11,7 +11,7 @@ class EmailAddressParser
     @emails = email_string.split(/[\s,']/)
     @emails.each_with_index do |address,index|
       if address == "" 
-        @email.slice!(index)
+        @emails.delete_at(index)
       binding.pry  
       end
     end 
