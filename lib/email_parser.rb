@@ -12,7 +12,8 @@ class EmailAddressParser
     @emails.each_with_index do |address,index|
       if address == " " 
         @email.delete_At(index)
-      binding.pry 
+      binding.pry  
+    end
     end 
   end
    
